@@ -109,14 +109,14 @@
             // nuevoPacienteToolStripMenuItem
             // 
             this.nuevoPacienteToolStripMenuItem.Name = "nuevoPacienteToolStripMenuItem";
-            this.nuevoPacienteToolStripMenuItem.Size = new System.Drawing.Size(129, 24);
+            this.nuevoPacienteToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
             this.nuevoPacienteToolStripMenuItem.Text = "Nuevo ...";
             this.nuevoPacienteToolStripMenuItem.Click += new System.EventHandler(this.nuevoPacienteToolStripMenuItem_Click);
             // 
             // verToolStripMenuItem1
             // 
             this.verToolStripMenuItem1.Name = "verToolStripMenuItem1";
-            this.verToolStripMenuItem1.Size = new System.Drawing.Size(129, 24);
+            this.verToolStripMenuItem1.Size = new System.Drawing.Size(188, 24);
             this.verToolStripMenuItem1.Text = "Ver ...";
             this.verToolStripMenuItem1.Click += new System.EventHandler(this.verToolStripMenuItem1_Click);
             // 
@@ -204,7 +204,7 @@
             // 
             // date_at
             // 
-            this.date_at.Location = new System.Drawing.Point(532, 24);
+            this.date_at.Location = new System.Drawing.Point(532, 28);
             this.date_at.Name = "date_at";
             this.date_at.Size = new System.Drawing.Size(200, 20);
             this.date_at.TabIndex = 9;
