@@ -130,5 +130,10 @@ namespace bookmedik_win
         {
 
         }
+
+        private void pacientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

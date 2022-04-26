@@ -105,6 +105,7 @@
             this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
             this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(74, 21);
             this.pacientesToolStripMenuItem.Text = "Pacientes";
+            this.pacientesToolStripMenuItem.Click += new System.EventHandler(this.pacientesToolStripMenuItem_Click);
             // 
             // nuevoPacienteToolStripMenuItem
             // 
@@ -148,9 +149,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(9, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Palabra";
+            this.label1.Text = "Asunto";
             // 
             // q
             // 

@@ -66,5 +66,10 @@ namespace bookmedik_win
                 }
             }
         }
+
+        private void PacientWindow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

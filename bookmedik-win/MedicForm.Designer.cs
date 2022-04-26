@@ -42,11 +42,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.pbImagen = new System.Windows.Forms.PictureBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_del
             // 
-            this.btn_del.Location = new System.Drawing.Point(53, 230);
+            this.btn_del.Location = new System.Drawing.Point(53, 429);
             this.btn_del.Name = "btn_del";
             this.btn_del.Size = new System.Drawing.Size(75, 23);
             this.btn_del.TabIndex = 27;
@@ -56,7 +61,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(160, 230);
+            this.button2.Location = new System.Drawing.Point(146, 429);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 26;
@@ -65,11 +70,11 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(241, 230);
+            this.button1.Location = new System.Drawing.Point(241, 429);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 25;
-            this.button1.Text = "Procesar";
+            this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -77,9 +82,9 @@
             // 
             this.label_title.AutoSize = true;
             this.label_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_title.Location = new System.Drawing.Point(49, 22);
+            this.label_title.Location = new System.Drawing.Point(121, 9);
             this.label_title.Name = "label_title";
-            this.label_title.Size = new System.Drawing.Size(121, 20);
+            this.label_title.Size = new System.Drawing.Size(127, 20);
             this.label_title.TabIndex = 24;
             this.label_title.Text = "Nuevo Medico";
             // 
@@ -163,11 +168,46 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Nombre:";
             // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(159, 194);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 30;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // pbImagen
+            // 
+            this.pbImagen.Location = new System.Drawing.Point(104, 223);
+            this.pbImagen.Name = "pbImagen";
+            this.pbImagen.Size = new System.Drawing.Size(212, 183);
+            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImagen.TabIndex = 29;
+            this.pbImagen.TabStop = false;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(53, 194);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.TabIndex = 28;
+            this.label6.Text = "Imagen:";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "ofdSeleccionar";
+            // 
             // MedicForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(370, 301);
+            this.ClientSize = new System.Drawing.Size(365, 474);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.pbImagen);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_del);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -186,6 +226,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nuevo Medico";
             this.Load += new System.EventHandler(this.MedicForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,5 +248,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.PictureBox pbImagen;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
