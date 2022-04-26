@@ -42,6 +42,11 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.btn_del = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.pbImagen = new System.Windows.Forms.PictureBox();
+            this.btnBuscar = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -85,9 +90,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(50, 164);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Telefono";
+            this.label5.Text = "Telefono:";
             // 
             // name
             // 
@@ -130,23 +135,23 @@
             this.title_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.title_label.Location = new System.Drawing.Point(49, 21);
             this.title_label.Name = "title_label";
-            this.title_label.Size = new System.Drawing.Size(134, 20);
+            this.title_label.Size = new System.Drawing.Size(140, 20);
             this.title_label.TabIndex = 10;
             this.title_label.Text = "Nuevo Paciente";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(241, 229);
+            this.button1.Location = new System.Drawing.Point(241, 423);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 11;
-            this.button1.Text = "Procesar";
+            this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(160, 229);
+            this.button2.Location = new System.Drawing.Point(145, 423);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 23);
             this.button2.TabIndex = 12;
@@ -155,7 +160,7 @@
             // 
             // btn_del
             // 
-            this.btn_del.Location = new System.Drawing.Point(53, 229);
+            this.btn_del.Location = new System.Drawing.Point(53, 423);
             this.btn_del.Name = "btn_del";
             this.btn_del.Size = new System.Drawing.Size(75, 23);
             this.btn_del.TabIndex = 13;
@@ -163,11 +168,46 @@
             this.btn_del.UseVisualStyleBackColor = true;
             this.btn_del.Click += new System.EventHandler(this.btn_del_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(53, 193);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Imagen:";
+            // 
+            // pbImagen
+            // 
+            this.pbImagen.Location = new System.Drawing.Point(104, 222);
+            this.pbImagen.Name = "pbImagen";
+            this.pbImagen.Size = new System.Drawing.Size(212, 183);
+            this.pbImagen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbImagen.TabIndex = 16;
+            this.pbImagen.TabStop = false;
+            // 
+            // btnBuscar
+            // 
+            this.btnBuscar.Location = new System.Drawing.Point(159, 193);
+            this.btnBuscar.Name = "btnBuscar";
+            this.btnBuscar.Size = new System.Drawing.Size(75, 23);
+            this.btnBuscar.TabIndex = 17;
+            this.btnBuscar.Text = "Buscar";
+            this.btnBuscar.UseVisualStyleBackColor = true;
+            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "ofdSeleccionar";
+            // 
             // PacientForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(365, 296);
+            this.ClientSize = new System.Drawing.Size(365, 474);
+            this.Controls.Add(this.btnBuscar);
+            this.Controls.Add(this.pbImagen);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btn_del);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -185,6 +225,8 @@
             this.Name = "PacientForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Nuevo Paciente";
+            this.Load += new System.EventHandler(this.PacientForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pbImagen)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -206,5 +248,9 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btn_del;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.PictureBox pbImagen;
+        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }

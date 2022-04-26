@@ -105,18 +105,19 @@
             this.pacientesToolStripMenuItem.Name = "pacientesToolStripMenuItem";
             this.pacientesToolStripMenuItem.Size = new System.Drawing.Size(74, 21);
             this.pacientesToolStripMenuItem.Text = "Pacientes";
+            this.pacientesToolStripMenuItem.Click += new System.EventHandler(this.pacientesToolStripMenuItem_Click);
             // 
             // nuevoPacienteToolStripMenuItem
             // 
             this.nuevoPacienteToolStripMenuItem.Name = "nuevoPacienteToolStripMenuItem";
-            this.nuevoPacienteToolStripMenuItem.Size = new System.Drawing.Size(129, 24);
+            this.nuevoPacienteToolStripMenuItem.Size = new System.Drawing.Size(188, 24);
             this.nuevoPacienteToolStripMenuItem.Text = "Nuevo ...";
             this.nuevoPacienteToolStripMenuItem.Click += new System.EventHandler(this.nuevoPacienteToolStripMenuItem_Click);
             // 
             // verToolStripMenuItem1
             // 
             this.verToolStripMenuItem1.Name = "verToolStripMenuItem1";
-            this.verToolStripMenuItem1.Size = new System.Drawing.Size(129, 24);
+            this.verToolStripMenuItem1.Size = new System.Drawing.Size(188, 24);
             this.verToolStripMenuItem1.Text = "Ver ...";
             this.verToolStripMenuItem1.Click += new System.EventHandler(this.verToolStripMenuItem1_Click);
             // 
@@ -148,9 +149,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(9, 30);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(43, 13);
+            this.label1.Size = new System.Drawing.Size(40, 13);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Palabra";
+            this.label1.Text = "Asunto";
             // 
             // q
             // 
@@ -204,7 +205,7 @@
             // 
             // date_at
             // 
-            this.date_at.Location = new System.Drawing.Point(532, 24);
+            this.date_at.Location = new System.Drawing.Point(532, 28);
             this.date_at.Name = "date_at";
             this.date_at.Size = new System.Drawing.Size(200, 20);
             this.date_at.TabIndex = 9;
