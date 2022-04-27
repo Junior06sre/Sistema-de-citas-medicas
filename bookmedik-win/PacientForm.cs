@@ -123,7 +123,7 @@ namespace bookmedik_win
         private void btnBuscar_Click(object sender, EventArgs e)
         {
             OpenFileDialog ofdSeleccionar = new OpenFileDialog();
-            ofdSeleccionar.Filter = "Imagenes|*.jpg; *.png";
+            ofdSeleccionar.Filter = "Imagenes|*.jpg; *.png; *.jpeg";
             ofdSeleccionar.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
             ofdSeleccionar.Title = "Seleccionar imagen";
 
